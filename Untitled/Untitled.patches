@@ -1,0 +1,108 @@
+{
+  "id": "121030d33bc0060bdb4a77b870976e9cdee0e3",
+  "revision": "1511563e36ed35a9247cba9f2d72294bfdd0d",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 181
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 181
+  },
+  "visual_programming": {
+    "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:593-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "fromPatch": "producer_patch_model:467-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "fromPort": "0",
+        "toPatch": "template_patch_model:591-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:595-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "fromPatch": "template_patch_model:589-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:591-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "toPort": "2"
+      }
+    ],
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:121118-d33bc006-0bdb-4a77-b870-976e9cdee0e3",
+        "subpatches": [
+          "producer_patch_model:467-a85af819-cead-485d-9f66-fd58ee3d714c",
+          "template_patch_model:14019-77a6493a-7568-46e3-b4d3-2c22db279a52",
+          "template_patch_model:589-a85af819-cead-485d-9f66-fd58ee3d714c",
+          "template_patch_model:591-a85af819-cead-485d-9f66-fd58ee3d714c"
+        ]
+      }
+    ],
+    "patches": [
+      {
+        "modelName": "producer_patch_model",
+        "name": "fondo1",
+        "identifier": "producer_patch_model:467-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "object": "texture:124867-d33bc006-0bdb-4a77-b870-976e9cdee0e3",
+        "position": [
+          4724,
+          1076
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Runtime",
+        "identifier": "template_patch_model:14019-77a6493a-7568-46e3-b4d3-2c22db279a52",
+        "position": [
+          5036,
+          1244
+        ],
+        "templateId": "builtin.runtime"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Vertex Attribute",
+        "identifier": "template_patch_model:589-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "position": [
+          4724,
+          1244
+        ],
+        "templateId": "builtin.shaderAttribute",
+        "values": [
+          {
+            "port": "1",
+            "value": {
+              "t": "int",
+              "v": 3
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Texture Sampler",
+        "identifier": "template_patch_model:591-a85af819-cead-485d-9f66-fd58ee3d714c",
+        "position": [
+          4892,
+          1076
+        ],
+        "templateId": "builtin.shaders.textureSampler",
+        "values": [
+          {
+            "port": "1",
+            "value": {
+              "t": "string",
+              "v": "texture:124867-d33bc006-0bdb-4a77-b870-976e9cdee0e3"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
