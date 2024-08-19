@@ -1,0 +1,36 @@
+{
+  "modelName": "texture",
+  "name": "fondo1",
+  "identifier": "texture:124867-d33bc006-0bdb-4a77-b870-976e9cdee0e3",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "42174ddb6e943afbe66383e80f7f1840",
+  "assetLocator": "textures/fondo1.jpg",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 1024,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 576,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "42174ddb6e943afbe66383e80f7f1840",
+      "colorCount": 70632,
+      "detectedAlphaChannel": "no_alpha",
+      "detectedOriginalFormat": "jpeg",
+      "entropyOfDistribution": 13.306133284159072,
+      "pixelsHigh": 1024,
+      "pixelsWide": 576
+    }
+  ]
+}
