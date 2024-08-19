@@ -28,7 +28,6 @@ const startValue = 1000;
       let sampler2 = A.samplers.linear(1, 1);
 //  primera animacion
       const driverParameters = {durationMilliseconds: startValue, loopCount: 1, mirror: false};
-      let driver = A.timeDriver(driverParameters);
       let sampler = A.samplers.linear(0.0, 1);
       material.opacity = A.animate(driver, sampler);
 
