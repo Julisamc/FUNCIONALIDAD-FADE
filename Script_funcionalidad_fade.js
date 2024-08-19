@@ -20,6 +20,8 @@ const startValue = 1000;
     ]);
 // duracion primer y ulltima animacion
         const startValue = 1000;
+//  Para final de la animacion
+        const StopAnim = A.samplers.linear(0, 0);
 // para tercera animacion
         let sampler3Anim = A.samplers.linear(1, 0.0)
 // segunda animacion
@@ -28,6 +30,7 @@ const startValue = 1000;
       let sampler2 = A.samplers.linear(1, 1);
 //  primera animacion
       const driverParameters = {durationMilliseconds: startValue, loopCount: 1, mirror: false};
+      let driver = A.timeDriver(driverParameters);
       let sampler = A.samplers.linear(0.0, 1);
       material.opacity = A.animate(driver, sampler);
 
@@ -40,16 +43,27 @@ const startValue = 1000;
       
 
       driver.onCompleted().subscribe(function animacion2() {
-         material.opacity = A.animate(driver, sampler);
+         material.opacity = A.animate(driver, sampler3Anim);
+        driver.reset();
+        driver.start();
+        
+        driver.onCompleted().subscribe(function pararAnim() {
+         material.opacity = A.animate(driver, StopAnim);
          driver.reset();
-        driver.reverse();
-        driver.stop();
+         driver.stop();
+        
+        
 
          });
 
-
+        });
 
   });
+
+        
+  })();   
+    
+
 
         
   })();   
