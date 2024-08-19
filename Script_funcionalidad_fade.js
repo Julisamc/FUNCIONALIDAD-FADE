@@ -34,7 +34,6 @@ const startValue = 1000;
       driver.start();
 
        driver.onCompleted().subscribe(function animacion1(){
-        const driverParameters2 = {}
          material.opacity = A.animate(dri2, sampler2)
          driver.reset();
          driver.start();
